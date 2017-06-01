@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz Peres</title>
+    
+    <link rel="stylesheet" href="css/foundation.css">
+    
+    <link rel="stylesheet" href="css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/w3.css">
+  
+  </head>
+  
+  <body>
+  
+	<header>
+		<div id="home">
+			<img id="Beatriz"  src="img/Beatriz1.jpg" alt="Beatriz">
+	  </div>
+	        <div id="titulo">
+			<p> Beatriz Peres</p>
+			<h4> Hi I'm a young designer</h4>
+		    </div>
+	
+	
+   </header>
+   
+
+  <div class="information">
+	<div id="personalinformation"  >
+	   <p>Personal information</p>
+	   <h1>Name</h1>
+	   <h1>Age</h1>
+	   <h1>Nationality</h1>
+	   <h1>Language</h1>
+	</div>
+
+	<div id="contacts">
+		<p> Contacts </p>
+		<h1> Mobile </h1>
+		<h1> Email </h1>
+	</div>
+
+	<div id="portfolio" >
+		<p> Portefolio </p>
+	</div>
+	  </div>
+	  <div class="information2">
+	<div id="personalinformation2"  >
+	   <p>--------------</p>
+	   <h1>Beatriz</h1>
+	   <h1>20</h1>
+	   <h1>Portuguese</h1>
+	   <h1>Portuguese , Inglese, Italian</h1>
+	</div>
+
+	<div id="contacts2">
+		<p>------------- </p>
+		<h1>+351930430065 </h1>
+		<h1>beajardim21@gmail.com </h1>
+	</div>
+	 <div id="portfolio2">
+		<p>------------- </p>
+	</div>
+      </div>
+
+<div class="information3">
+	<div id="education"  >
+	   <p>Education qualification</p>
+	   <h1>Arts(high school)</h1>
+	   <p>2012-2014</p>
+	   <h1>Degree:Design</h1>
+	   <p>2014-2017</p>
+	    <h1>Madeira Service Jam(participation)</h1>
+	   <p>2015</p>
+	   <h1>Design Now Jam in Madeira(participation)</h1>
+	   <p>2016</p>
+	</div>
+  <div class="information4">
+	<div id="tecnical">
+		<p> Tecnical skills </p>
+		<div id="icones">
+		<img src="img/ilustrator.png" alt="ilustrator">
+		<img src="img/photoshop.png" alt="photoshop">
+		<img src="img/indesign.png" alt="indesign">
+		</div>
+		<div id="palavras">
+		<p>Ilustrator </p>
+		<p>Photoshop </p>
+		<p>Indesign</p>
+		</div>
+		<div id="palavras1">
+		<p1>65% </p1>
+		<p>60%</p>
+		<p2>55%</p2>
+		</div>
+	    <div id="icones1">
+		<img src="img/after.png" alt="after">
+		<img src="img/blender.png" alt="blender">
+		<img src="img/rhino.png" alt="rhino">
+		</div>
+		<div id="palavras2">
+		<p>After Effects</p>
+		<p>Blender </p>
+		<p>Rhinoceros</p>
+		</div>
+		<div id="palavras3">
+		<p1>40% </p1>
+		<p>30%</p>
+		<p2>50%</p2>
+		</div>
+	  </div>
+		 
+
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/what-input.js"></script>
+	<script src="js/vendor/foundation.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+	
+	<style>
+	.mySlides {
+		display:none
+		}
+		
+	.w3-left, .w3-right, .w3-badge {
+		cursor:pointer
+	}
+	
+	.w3-badge {
+		height:13px;
+		width:13px;
+		padding:0
+	}
+	</style>
+	
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function currentDiv(n) {
+		  showDivs(slideIndex = n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			 dots[i].className = dots[i].className.replace(" w3-white", "");
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " w3-white";
+		}
+	</script>
+
+	<!--<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000);    
+		}
+	</script>-->
+  </body>
+</html>
