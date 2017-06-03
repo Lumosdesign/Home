@@ -11,6 +11,7 @@ html, body {
 	padding: 0;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	background-color: white;
 }
 
 @font-face{
@@ -38,11 +39,12 @@ html, body {
 		right: 0;
 		left: 0;
 		top: 0;
-		margin: 0
+		margin: 0;
+		padding-bottom: 40%;
 		background-image: url(imagens/fundo.png);
 		background-repeat: no-repeat;
-		background-size: 100% 1024px;
-		text-align: center;
+		background-size: 100% auto;
+		background-attachment: scroll;
 		font-size: 20px;
 		font-family: Helvetica;
 	}
@@ -92,10 +94,105 @@ html, body {
 main {
 	background-image: url(imagens/fundo2.png);
 	background-size: 100% auto;
+	display: block;
+}
+
+.quem-img {
+	max-width: 14%;
+	height: auto;
+	margin-right: 0; 
+	border-right: 30px outset rgba(63, 30, 98, .4);
+
+}
+
+.quem-img:hover {
+	max-width: 14%;
+	height: auto;
+	margin-right: 0;
+	background-color: grey;
+	opacity: .4;    
+	-webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.overlay {
+    position: absolute;
+    width:14%;
+    height:auto;
+    z-index:99;
+    opacity:1;
+    color: white;
 }
 
 
+.quem-img:hover .overlay {
+	opacity: 1;
+	max-width: 14%;
+	height: auto;
+	margin-left: 0;
+	top: -100px;
+	display: block;
+	opacity:1;
+    width: 14%;
+    height:auto;
+    padding: 30%;
+    display:block;
+    background:rgba(255, 255, 255, 0.4)
+}
+
+/*
+.wow {
+    position:relative;
+    width: 50%;
+    height:auto;
+    -webkit-transition: opacity 0.8s ease-in-out;
+    -moz-transition: opacity 0.8s ease-in-out;
+    -o-transition: opacity 0.8s ease-in-out;
+    -ms-transition: opacity 0.8s ease-in-out;
+    transition: opacity 0.8s ease-in-out;
+}
+.wow img {
+    position: relative;
+    width:14%;
+    height: auto;
+    z-index:1
+
+}
+.overlay {
+    position:absolute;
+    width:14%;
+    height:auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    z-index:2;
+    opacity:0;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.wow:hover > .overlay {
+    opacity:1;
+    width:560px;
+    height:310px height:auto;
+    padding:5px;
+    display:block;
+    background:rgba(255, 255, 255, 0.4)
+}
+#wow img:hover {
+    opacity: 0.4;
+}
+*/
+
+
 ==================== LUMOS =====================
+
+
 
 ==================== ILUMINACAO ==================
 

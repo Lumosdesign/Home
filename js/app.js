@@ -46,3 +46,4 @@ for (var p = 0; p < l; p++) {
 document.body.appendChild(newImage);  
 }
 - See more at: http://www.w3resource.com/javascript-exercises/javascript-dom-exercise-11.php#sthash.xDvT0YN7.dpuf)
+
