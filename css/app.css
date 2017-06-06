@@ -1,114 +1,204 @@
-
-
-/* ================== Essencial e Genérico para todas as páginas ============================= */
-
-@charset "UTF-8";
-
-html, body {
-	max-width: 100%;
-	margin: 0;
-	margin-top: 0;
-	padding: 0;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	background-color: white;
-}
-
-@font-face{
-
-	font-family: Helvetica;
-	src: url(font/Helvetica.ttf);
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Helvetica-Bold;
-	src: url(font/Helvetica-Bold.ttf);
-	font-style: bold;
-}
-
-@font-face {
-	font-family: 
-}
-
-
-=============================   HEADER =====================
-
-	#header {
-		max-width: 100%;
-		right: 0;
-		left: 0;
-		top: 0;
-		margin: 0;
-		padding-bottom: 40%;
-		background-image: url(imagens/fundo.png);
-		background-repeat: no-repeat;
-		background-size: 100% auto;
-		background-attachment: scroll;
-		font-size: 20px;
-		font-family: Helvetica;
-	}
-
-	#header a {
-		color: #FFFFFF;
-		text-decoration: none;
-		display: inline-block;
-		margin-left: 4%;
-		margin-right: 2%;
-		list-style: none;
-	}
-
-	#header a:visited {
-		color: #FFFFFF;
-		text-decoration: none;
-	}
-
-	#header a:hover {
-		text-decoration: none;
-		color: #fac013;
-		border: 0px solid #fac013;
-  		box-shadow: inset 0px 0px 100px rgb(250, 192, 19, .05);
-  		border-radius: 80%;
-	}
-
-	.a-left {
-		column-width: 2;
-		padding: 2%;
-	}
-
-	.a-right {
-		column-width: 2;
-		padding: 2%;
-	}
-
-	.a-link : link {
-		color: #FFFFFF;
-	}
-
-	.a-link : actived {
-		color: #7F7F7F;
-	}
-
-==================== QUEM =====================
-
-main {
-	background-image: url(imagens/fundo2.png);
+body{
+	font-family: 'Bebas Neue', sans-serif;
+	background: grey;
+	line-height: 1;
+	font-size:100%;
+	background-image: url("img/fundo.png");
 	background-size: 100% auto;
-	display: block;
+    background-repeat: repeat;	
+
 }
 
-.quem-img {
-	max-width: 14%;
-	height: auto;
-	margin-right: 0; 
-	border-right: 30px outset rgba(63, 30, 98, .4);
 
+/*código em comum */
+
+/*#f8bf17 - amarelo
+#be1e62 - Rosa*/
+
+h1 {
+	font-family:'Oswald', sans-serif;
+	font-size: 22px;
+	font-style: bold;
+	color: #f8bf17;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+h2 {
+	font-family:'Oswald', sans-serif;
+	font-size: 20px;
+	font-style: bold;
+	color: #f8bf17;
+	opacity: .8;
+	margin-top: 5%;
+}
+
+h3 {
+	font-family:'Oswald', sans-serif;
+	font-size: 18px;
+	font-style: bold;
+	color: #f8bf17;
+	opacity: .8;
+	margin-top: 5%;
+} 
+
+h4 {
+	font-family:'Oswald', sans-serif;
+	font-size: 16px;
+	font-style: bold;
+	color: #f8bf17;
+	opacity: .8;
+	margin-top: 5%;
+}
+
+p {
+	font-family:'helvetica', sans-serif;
+	font-size: 14px;
+	color: white;
+	text-align: left;
+}
+
+/* img{
+    border: 3px solid #be1e62;
+    border-radius: 4px;
+	border-radius: 8px;
+} */
+
+/*menu*/
+		.menu-hover-lines {
+		  text-align: center;
+		  text-transform: uppercase;
+		  font-weight: 500;
+		  letter-spacing: 1px;
+		  transition: all 0.35s ease;
+		  margin-left: 20%;
+		  margin-bottom: 2%;
+		  margin-top: 2%;
+		}
+
+		.menu-hover-lines li a {
+		  padding: 0.75rem 0;
+		  color: rgb(255, 255, 255);
+		  position: relative;
+		  margin-left: 1rem;
+		}
+
+		.menu-hover-lines li:first-child a {
+		  margin-left: 0;
+		}
+
+		.menu-hover-lines li.active > a {
+		  background-color: transparent;
+		}
+
+		.menu-hover-lines a:before,.menu-hover-lines a::after {
+		  height: 3px;
+		  position: absolute;
+		  content: '';
+		  transition: all 0.35s ease;
+		  background-color: #f8bf17;
+		  width: 0;
+		}
+
+		.menu-hover-lines a::before {
+		  top: 0;
+		  left: 0;
+		}
+
+		.menu-hover-lines a::after {
+		  bottom: 0;
+		  right: 0;
+		}
+
+		.menu-hover-lines a:hover,
+		.menu-hover-lines li.active > a {
+		  color: #fff;
+		  transition: all 0.35s ease;
+		}
+
+		.menu-hover-lines a:hover::before,
+		.menu-hover-lines .active a::before,
+		.menu-hover-lines a:hover::after,
+		.menu-hover-lines .active a::after {
+		  width: 100%;
+		}
+
+
+	
+/*pagina Home*/
+
+	#logo-grande{
+		max-width: 80%;
+		align-items: center;
+		margin: 0 10%;
+	}
+	/*	
+	#slogan{
+		max-width: 40%
+	}*/
+
+/*lumos*/
+	
+
+		/*.sobre-lumos {
+		  background-color: #fefefe;
+		  padding: 1%;
+		  opacity: 0.8;
+		}*/
+
+		.sobre-lumos .separator-left {
+		  text-align: left;
+		}
+		
+		.separator-left p{
+			color: black;
+			text-align: left;
+		}
+
+		.sobre-lumos .separator-left::before, .sobre-lumos .separator-left::after {
+		  display: table;
+		  content: ' ';
+		  -webkit-flex-basis: 0;
+			  -ms-flex-preferred-size: 0;
+				  flex-basis: 0;
+		  -webkit-order: 1;
+			  -ms-flex-order: 1;
+				  order: 1;
+		}
+
+		.sobre-lumos .separator-left::after {
+		  clear: both;
+		}
+
+		.sobre-lumos .separator-left::after {
+		  position: relative;
+		  width: 5rem;
+		  border-bottom: 0.125rem solid #be1e62;
+		  margin: 0.3rem auto 0;
+		  margin-left: 0;
+		}
+
+		.sobre-lumos .author-title {
+		  text-transform: uppercase;
+		}
+
+		.sobre-lumos {
+		  text-align: center;
+		  margin: 4% 5%;
+		  display: inline-block;
+		}
+
+/* Quem somos */
+.quem-img {
+	max-width: 16%;
+	left: 0;
+	border-right: 10px outset #be1e62;
 }
 
 .quem-img:hover {
-	max-width: 14%;
-	height: auto;
-	margin-right: 0;
+	max-width: 16%;
+	left: 0;
 	background-color: grey;
 	opacity: .4;    
 	-webkit-transition: opacity 0.8s ease-in-out;
@@ -118,82 +208,146 @@ main {
     transition: opacity 0.8s ease-in-out;
 }
 
-.overlay {
-    position: absolute;
-    width:14%;
-    height:auto;
-    z-index:99;
-    opacity:1;
-    color: white;
+.aquem {
+	visibility: none;
+}
+
+/*parceiros*/
+	.menu-parceiros {
+		max-width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		padding: 2% 4%;
+		text-align-last: center;
+		margin-top: 3%;
+		background-color: #fff;
+	}
+
+	.menu-parceiros ul li {
+		display: inline-block;
+	}
+	
+	
+/*divulgação*/
+
+
+
+
+.wide-article-link {
+  padding: 1%;
+  margin: 4% 5%;
+}
+
+.wide-article-link .article-title a {
+  color: #0a0a0a;
+}
+
+.wide-article-link .article-title a:hover, .wide-article-link .article-title a:focus {
+  color:#be1e62;
+}
+
+.wide-article-link .article-elipsis .read-more {
+  font-weight: bold;
+}
+
+.wide-article-link .article-title,
+.wide-article-link .article-elipsis {
+  margin-bottom: 0.25rem;
+}
+
+ /*divulgação dos trabalhos*/
+
+
+.featured-image-block-grid-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featured-image-block {
+  margin-bottom: 20px;
+}
+
+.featured-image-block .featured-image-block-title {
+  font-weight: 600;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  color: #404040;
+}
+
+.featured-image-block a:hover p {
+  color: #be1e62;
 }
 
 
-.quem-img:hover .overlay {
-	opacity: 1;
-	max-width: 14%;
-	height: auto;
-	margin-left: 0;
-	top: -100px;
-	display: block;
-	opacity:1;
-    width: 14%;
-    height:auto;
-    padding: 30%;
-    display:block;
-    background:rgba(255, 255, 255, 0.4)
-}
 
-/*
-.wow {
-    position:relative;
-    width: 50%;
-    height:auto;
-    -webkit-transition: opacity 0.8s ease-in-out;
-    -moz-transition: opacity 0.8s ease-in-out;
-    -o-transition: opacity 0.8s ease-in-out;
-    -ms-transition: opacity 0.8s ease-in-out;
-    transition: opacity 0.8s ease-in-out;
-}
-.wow img {
-    position: relative;
-    width:14%;
-    height: auto;
-    z-index:1
+
+	
+/*inscrição*/
+	
+	.translucent-form-overlay2 {
+	  max-width: 35%;
+	  width: 100%;
+	  padding: 20px;
+	  color: #be1e62;
+	  margin: 2% 0 2% 60%;
+	}
+
+	.translucent-form-overlay2 .columns.row2 {
+	  display: block;
+
+	}
+/*botão de envio*/
+
+.button.primary {
+    background-color: #be1e62;
 
 }
-.overlay {
-    position:absolute;
-    width:14%;
-    height:auto;
-    margin-top: 1%;
-    margin-left: 1%;
-    z-index:2;
-    opacity:0;
-    -webkit-transition: opacity 0.4s ease-in-out;
-    -moz-transition: opacity 0.4s ease-in-out;
-    -o-transition: opacity 0.4s ease-in-out;
-    -ms-transition: opacity 0.4s ease-in-out;
-    transition: opacity 0.4s ease-in-out;
+
+	
+.button.primary:hover {
+    background-color: #f8bf172;
+  
+}
+	
+	
+
+/*Footer*/
+.footer{
+	left:0;
+	right:0;
+	bottom:0;
 }
 
-.wow:hover > .overlay {
-    opacity:1;
-    width:560px;
-    height:310px height:auto;
-    padding:5px;
-    display:block;
-    background:rgba(255, 255, 255, 0.4)
+.footer p{
+	font-family:'helvetica', sans-serif;
+	font-size: 11px;
+	color: white;
+	text-align: center;
+	position: relative;
+	right:0;
+	left:0;
+	bottom:2%;
+	background: transparent;
+	opacity: 0.8;
 }
-#wow img:hover {
-    opacity: 0.4;
+
+.footer2 {
+	left:0;
+	right:0;
+	bottom:0;
 }
-*/
 
-
-==================== LUMOS =====================
-
-
-
-==================== ILUMINACAO ==================
-
-==================== PATROCINIOS ===================
+.footer2 p{
+	font-family:'helvetica', sans-serif;
+	font-size: 11px;
+	color: white;
+	text-align: center;
+	position: fixed;
+	right:0;
+	left:0;
+	bottom:2%;
+	background: transparent;
+	opacity: 0.8;
+}
